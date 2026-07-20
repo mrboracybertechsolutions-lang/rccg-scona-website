@@ -84,6 +84,7 @@ Upload the *contents* of `site/` to the web root. No environment variables or da
 - Weekly schedule, phones, videos: the parish YouTube channel "RCCG SCONA TV"
   (https://www.youtube.com/@rccgsolutioncenterforallna510)
 - Pastor's full name, office phone, pastor email: RCCGNA parish directory (parish #239, Zone IN-1)
-- Church email: the parish's UENI listing (rccgsolutioncenter.ueniweb.com)
+- Church email (solutioncenter2@yahoo.com): confirmed by the parish, and shown on the
+  parish announcement slide
 - Established date (Feb 18, 2003): parish Facebook page
 - Giving details: parish "Three Ways to Give" service slide
