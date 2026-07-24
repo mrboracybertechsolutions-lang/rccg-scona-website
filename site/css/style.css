@@ -831,6 +831,80 @@ a { color: var(--navy-3); }
 }
 
 /* --------------------------------------------------------------------------
+   TEMPORARY — RCCG Covenant House 25th Anniversary banner
+   Added 2026-07-23, remove this whole block + the section in index.html by 2026-08-02.
+   -------------------------------------------------------------------------- */
+.jubilee-banner {
+  background: linear-gradient(120deg, var(--navy) 0%, var(--navy-3) 60%, var(--purple) 100%);
+  color: #fff;
+  padding: 2.6rem 0;
+  border-top: 4px solid var(--gold);
+  border-bottom: 4px solid var(--gold);
+}
+
+.jubilee-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.jubilee-badge {
+  flex-shrink: 0;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 1;
+  box-shadow: 0 6px 20px rgba(201, 138, 45, 0.45);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.jubilee-badge span {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-top: 0.15rem;
+}
+
+.jubilee-copy { flex: 1; min-width: 260px; }
+
+.jubilee-copy .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 0.4rem;
+}
+
+.jubilee-copy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  margin-bottom: 0.5rem;
+}
+
+.jubilee-copy p { color: #dde4f0; max-width: 700px; }
+.jubilee-copy p a { color: var(--gold-light); font-weight: 600; }
+
+@media (max-width: 720px) {
+  .jubilee-inner { text-align: center; justify-content: center; }
+}
+/* --------------------------------------------------------------------------
+   END TEMPORARY jubilee banner
+   -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */
 @media (max-width: 960px) {
