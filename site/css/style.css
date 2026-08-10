@@ -832,7 +832,7 @@ a { color: var(--navy-3); }
 
 /* --------------------------------------------------------------------------
    TEMPORARY — RCCG Covenant House 25th Anniversary banner
-   Added 2026-07-23, remove this whole block + the section in index.html by 2026-08-02.
+   Added 2026-07-23, remove this whole block + the section in index.html by 2026-09-28.
    -------------------------------------------------------------------------- */
 .jubilee-banner {
   background: linear-gradient(120deg, var(--navy) 0%, var(--navy-3) 60%, var(--purple) 100%);
