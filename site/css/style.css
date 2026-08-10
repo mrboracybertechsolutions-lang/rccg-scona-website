@@ -621,6 +621,64 @@ a { color: var(--navy-3); }
 .pastor-copy p { margin-bottom: 1rem; color: var(--ink-soft); }
 
 /* --------------------------------------------------------------------------
+   Reusable page photography — banner image + photo/copy feature block.
+   Used across pages to attach real photos to main sections.
+   -------------------------------------------------------------------------- */
+.section-banner-img {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 2.8rem;
+}
+
+.section-banner-img img {
+  width: 100%;
+  height: clamp(200px, 30vw, 380px);
+  object-fit: cover;
+  display: block;
+}
+
+.photo-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.6rem;
+  align-items: center;
+}
+
+.photo-feature.reverse .photo-feature-img { order: 2; }
+.photo-feature.reverse .photo-feature-copy { order: 1; }
+
+.photo-feature-img {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border-bottom: 5px solid var(--gold);
+}
+
+.photo-feature-img img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-feature-copy h2 {
+  font-family: var(--font-display);
+  color: var(--navy);
+  font-size: 1.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.photo-feature-copy p { margin-bottom: 1rem; color: var(--ink-soft); }
+
+@media (max-width: 800px) {
+  .photo-feature, .photo-feature.reverse { grid-template-columns: 1fr; }
+  .photo-feature.reverse .photo-feature-img { order: 1; }
+  .photo-feature.reverse .photo-feature-copy { order: 2; }
+}
+
+/* --------------------------------------------------------------------------
    Events / announcements
    -------------------------------------------------------------------------- */
 .event-list { display: grid; gap: 1.1rem; }
