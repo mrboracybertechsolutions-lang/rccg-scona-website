@@ -856,6 +856,17 @@ a { color: var(--navy-3); }
   letter-spacing: 0.02em;
 }
 
+/* Volunteer photo pair: reuses the .gallery-item tile and lightbox, on a light section */
+.volunteer-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 960px;
+  margin: 0 auto 2.4rem;
+}
+
+.volunteer-photos .gallery-item { box-shadow: var(--shadow); }
+
 /* Full-size photo viewer opened from the gallery tiles */
 .lightbox {
   border: 0;
@@ -917,6 +928,7 @@ body:has(dialog[open]) { overflow: hidden; }
   .pantry-gallery { grid-template-columns: 1fr 1fr; gap: 0.7rem; }
   .gallery-item.feature { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 4 / 5; }
   .gallery-cap { padding: 2rem 0.8rem 0.7rem; font-size: 0.85rem; }
+  .volunteer-photos { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
